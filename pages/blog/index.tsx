@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import { ImagePlaceholder } from "@/components/image-placeholder";
 import { useRouter } from "next/router";
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 
 const blogPosts = [
   {
@@ -49,33 +49,32 @@ const blogPosts = [
   }
 ];
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const featuredPost = blogPosts.find(post => post.featured);
   
-  if (featuredPost) {
+  if (!featuredPost) {
     return {
-      redirect: {
-        destination: `/blog/${featuredPost.id}`,
-        permanent: false,
-      },
+      props: {}, // Return empty props if no featured post is found
     };
   }
   
   return {
-    props: {}, // Return empty props if no featured post is found
+    props: {
+      featuredPostId: featuredPost.id,
+      featuredPost
+    },
   };
 };
 
-export default function BlogPage() {
-  const featuredPost = blogPosts.find(post => post.featured);
+export default function BlogPage({ featuredPostId, featuredPost }: { featuredPostId?: string, featuredPost?: any }) {
   const router = useRouter();
   
   // Client-side redirect as a fallback
   useEffect(() => {
-    if (featuredPost) {
-      router.replace(`/blog/${featuredPost.id}`);
+    if (featuredPostId) {
+      router.replace(`/blog/${featuredPostId}`);
     }
-  }, [featuredPost, router]);
+  }, [featuredPostId, router]);
 
   // The rest of the component is kept for fallback rendering while redirecting
   return (
