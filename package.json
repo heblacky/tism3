@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroui/button": "2.2.16",
@@ -23,6 +23,7 @@
     "@heroui/theme": "2.4.12",
     "@react-aria/visually-hidden": "3.8.20",
     "clsx": "2.1.1",
+    "critters": "^0.0.23",
     "framer-motion": "^11.13.1",
     "intl-messageformat": "^10.5.0",
     "next": "15.0.4",

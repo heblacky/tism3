@@ -6,6 +6,7 @@ const config = {
     './layouts/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -16,16 +17,16 @@ const config = {
       },
       colors: {
         background: {
-          DEFAULT: "#0A0A0A",
-          foreground: "#FFFFFF",
+          DEFAULT: "#FFFFFF",
+          foreground: "#000000",
         },
         primary: {
           DEFAULT: "#8B5CF6",
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#1A1A1A",
-          foreground: "#FFFFFF",
+          DEFAULT: "#F5F7FA",
+          foreground: "#000000",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -50,6 +51,9 @@ const config = {
       },
       animation: {
         blob: "blob 7s infinite",
+        'float': 'float 6s ease-in-out infinite',
+        'float-slow': 'float-slow 8s ease-in-out infinite',
+        'float-reverse': 'float-reverse 7s ease-in-out infinite',
       },
       keyframes: {
         blob: {
@@ -66,6 +70,33 @@ const config = {
             transform: "translate(0px, 0px) scale(1)",
           },
         },
+        upload: {
+          '0%, 100%': { width: '0%' },
+          '50%': { width: '100%' }
+        },
+        processing: {
+          '0%, 100%': { opacity: '0.1' },
+          '50%': { opacity: '0.3' },
+        },
+        moneyPop: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        },
+        float: {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+          '100%': { transform: 'translateY(0px)' },
+        },
+        'float-slow': {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+          '100%': { transform: 'translateY(0px)' },
+        },
+        'float-reverse': {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(15px)' },
+          '100%': { transform: 'translateY(0px)' },
+        }
       },
     },
   },

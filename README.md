@@ -53,3 +53,44 @@ After modifying the `.npmrc` file, you need to run `pnpm install` again to ensur
 ## License
 
 Licensed under the [MIT license](https://github.com/heroui-inc/next-pages-template/blob/main/LICENSE).
+
+# OnlyDowns - AI Facial Transformation
+
+OnlyDowns is an AI-powered platform that transforms faces in videos with unique characteristics. This repository contains the website code for the OnlyDowns project.
+
+## Features
+
+- AI video transformation
+- Token-based ecosystem
+- Responsive design
+
+## Technologies
+
+- Next.js
+- React
+- Tailwind CSS
+- HeroUI components
+
+## Deployment
+
+The site is configured for deployment to onlydowns.xyz.
+
+To deploy:
+1. Run `./deploy.sh` to build the static site
+2. Upload the `out` directory to your hosting provider
+3. Ensure your DNS settings point to your hosting
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+Visit [onlydowns.xyz](https://onlydowns.xyz) to see the live site.

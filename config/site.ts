@@ -1,33 +1,57 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "PayDexBro",
-  description: "Real-time cryptocurrency pair tracking and analytics",
+  name: "Only Downs",
+  description: "Transform your photos with our unique AI facial features",
+  domain: "onlydowns.xyz",
+  url: "https://onlydowns.xyz",
   navItems: [
     {
-      label: "Deploy Wallet",
-      href: "/deploy-wallet",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "FAQ",
-      href: "/faq",
+      label: "How It Works",
+      href: "#how-it-works",
+    },
+    {
+      label: "Blog",
+      href: "/blog/ai-down-syndrome-representation",
+    },
+    {
+      label: "Tokenomics",
+      href: "#tokenomics",
+    },
+    {
+      label: "Try Now",
+      href: "#try-now",
     },
   ],
   navMenuItems: [
     {
-      label: "Deploy Wallet",
-      href: "/deploy-wallet",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "FAQ",
-      href: "/faq",
+      label: "How It Works",
+      href: "#how-it-works",
+    },
+    {
+      label: "Blog",
+      href: "/blog/ai-down-syndrome-representation",
+    },
+    {
+      label: "Tokenomics",
+      href: "#tokenomics",
+    },
+    {
+      label: "Try Now",
+      href: "#try-now",
     },
   ],
   links: {
-    github: "https://github.com/paydexbro",
-    twitter: "https://twitter.com/paydexbro",
-    docs: "https://docs.paydexbro.com",
-    discord: "https://discord.gg/paydexbro",
-    telegram: "https://t.me/paydexbrocom",
+    twitter: "https://twitter.com/onlydownsxyz",
+    tiktok: "https://www.tiktok.com/@minaisfreaky",
+    telegram: "https://t.me/onlydownsxyz",
   },
 };

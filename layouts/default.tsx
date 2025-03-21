@@ -1,8 +1,68 @@
-import { Link } from "@heroui/link";
+"use client";
 
+import Link from "next/link";
 import { Head } from "./head";
+import dynamic from 'next/dynamic';
+import { siteConfig } from "@/config/site";
+import { TwitterIcon, TikTokIcon, TelegramIcon } from "@/components/icons";
+import Image from "next/image";
 
-import { Navbar } from "@/components/navbar";
+// Client components with hooks should be imported using dynamic with ssr: false
+const ClientSideNav = dynamic(
+  () => import('../components/client-side-nav'),
+  { ssr: false }
+);
+
+// Background elements component with only the blue gradients
+const BackgroundElements = () => (
+  <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="absolute top-0 left-0 w-full h-full">
+      {/* Original gradients */}
+      <div className="absolute top-[5%] right-[5%] w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-[100px]" />
+      <div className="absolute bottom-[5%] left-[5%] w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-[100px]" />
+    </div>
+  </div>
+);
+
+// Footer component without hooks
+const Footer = () => (
+  <footer className="border-t border-[#004cff]/10 bg-white">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex items-center space-x-2">
+          <Link href="/" className="text-black font-bold text-xl">
+            <div className="flex items-center space-x-2">
+              <Image
+                src="/images/logo.png"
+                alt="OnlyDowns Logo"
+                width={28}
+                height={28}
+                className="rounded-full"
+              />
+              <span>OnlyDowns</span>
+            </div>
+          </Link>
+        </div>
+        <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0">
+          <div className="text-gray-600 text-sm mr-6">
+            &copy; {new Date().getFullYear()} OnlyDowns. All rights reserved.
+          </div>
+          <div className="flex items-center space-x-4 mt-3 md:mt-0">
+            <Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors">
+              <TwitterIcon className="h-5 w-5" />
+            </Link>
+            <Link href={siteConfig.links.tiktok} target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors">
+              <TikTokIcon className="h-5 w-5" />
+            </Link>
+            <Link href={siteConfig.links.telegram} target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors">
+              <TelegramIcon className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
 
 export default function DefaultLayout({
   children,
@@ -10,73 +70,16 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative flex flex-col min-h-screen bg-[#0A0A0A]">
-      {/* HeroUI-style background */}
-      <div className="fixed inset-0 bg-[#0A0A0A] overflow-hidden">
-        {/* Blue gradient bubble */}
-        <div 
-          className="absolute -left-[30%] -top-[30%] w-[80%] h-[80%] rounded-full"
-          style={{
-            background: "radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 25%, rgba(59, 130, 246, 0.05) 50%, transparent 70%)",
-            transform: "rotate(-45deg)",
-            filter: "blur(40px)",
-          }}
-        />
-        
-        {/* Purple gradient bubble */}
-        <div 
-          className="absolute -right-[30%] -bottom-[30%] w-[80%] h-[80%] rounded-full"
-          style={{
-            background: "radial-gradient(circle at center, rgba(139, 92, 246, 0.15) 0%, rgba(139, 92, 246, 0.1) 25%, rgba(139, 92, 246, 0.05) 50%, transparent 70%)",
-            transform: "rotate(-45deg)",
-            filter: "blur(40px)",
-          }}
-        />
-        
-        {/* Looper pattern overlay */}
-        <div 
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, #fff 1px, transparent 0)`,
-            backgroundSize: '40px 40px',
-            maskImage: 'radial-gradient(circle at center, black 30%, transparent 70%)',
-            WebkitMaskImage: 'radial-gradient(circle at center, black 30%, transparent 70%)',
-          }}
-        />
-      </div>
+    <div className="relative min-h-screen flex flex-col bg-white">
+      <BackgroundElements />
       
-      <Head />
-      <Navbar />
-      <main className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex-grow pt-16 relative z-10">
-        {children}
-      </main>
-      <footer className="w-full fixed bottom-0 left-0 right-0 bg-[#0A0A0A]/95 backdrop-blur-sm border-t border-[#1A1A1A] py-4 z-50">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-center">
-          <div className="flex items-center gap-4 text-sm text-default-600">
-            <Link
-              isExternal
-              className="text-[#71717A] hover:text-white transition-colors"
-              href="https://github.com/paydexbro"
-            >
-              GitHub
-            </Link>
-            <Link
-              isExternal
-              className="text-[#71717A] hover:text-white transition-colors"
-              href="https://twitter.com/paydexbro"
-            >
-              Twitter
-            </Link>
-            <Link
-              isExternal
-              className="text-[#71717A] hover:text-white transition-colors"
-              href="https://discord.gg/paydexbro"
-            >
-              Discord
-            </Link>
-          </div>
-        </div>
-      </footer>
+      {/* Navbar - dynamically imported with no SSR */}
+      <ClientSideNav />
+      
+      {/* Main content */}
+      <main className="flex-grow mt-16">{children}</main>
+      
+      <Footer />
     </div>
   );
 }

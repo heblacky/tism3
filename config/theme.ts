@@ -1,6 +1,5 @@
-import { createTheme } from "@heroui/theme";
-
-export const darkTheme = createTheme({
+// Define the theme types and values directly
+export const darkTheme = {
   type: "dark",
   theme: {
     colors: {
@@ -45,4 +44,4 @@ export const darkTheme = createTheme({
       },
     },
   },
-}); 
+}; 
