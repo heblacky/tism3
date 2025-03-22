@@ -50,7 +50,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/onlydownsxyz",
+    twitter: "https://x.com/onlydownsxyz_",
     tiktok: "https://www.tiktok.com/@minaisfreaky",
     telegram: "https://t.me/onlydownsxyz",
   },

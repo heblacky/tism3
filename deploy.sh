@@ -2,7 +2,7 @@
 
 echo "Building OnlyDowns.xyz for production..."
 # Next.js now outputs static files to the 'out' directory by default when configured for static export
-npm run build
+npx next build
 
 echo "Preparing for deployment to onlydowns.xyz..."
 # Add CNAME file for GitHub Pages or similar static hosting
