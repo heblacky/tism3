@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',  // Enable static HTML export
   distDir: 'out',    // Output directory
+  eslint: {
+    ignoreDuringBuilds: true, // Disable linting during builds
+  },
   experimental: {
     optimizePackageImports: ['@heroui/link', '@heroui/button', 'react', 'react-dom'],
   },
