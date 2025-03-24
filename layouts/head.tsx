@@ -15,10 +15,14 @@ export const Head = () => {
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         name="viewport"
       />
-      <link href="/images/logo.png" rel="icon" type="image/png" sizes="32x32" />
-      <link href="/images/logo.png" rel="icon" type="image/png" sizes="16x16" />
-      <link href="/images/logo.png" rel="apple-touch-icon" />
-      <link rel="shortcut icon" href="/images/logo.png" />
+      {/* Comprehensive favicon configuration to override all defaults */}
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
+      <link rel="icon" href="/images/logo.png" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
+      <link rel="apple-touch-icon" href="/images/logo.png" />
+      
       <link rel="canonical" href={siteConfig.url} />
       <meta property="og:url" content={siteConfig.url} />
       <meta property="og:site_name" content={siteConfig.name} />
