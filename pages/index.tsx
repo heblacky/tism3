@@ -758,7 +758,7 @@ export default function IndexPage() {
                     ></iframe>
                   </div>
                   <p className="mt-4 text-sm text-gray-600 text-center">
-                    Live chart will be available when token is launched. This is a placeholder showing the Solana DEX market.
+                    Live chart will be available when token is launched.
                   </p>
                 </div>
               </div>
