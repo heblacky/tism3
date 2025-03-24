@@ -278,8 +278,46 @@ export default function IndexPage() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="how-it-works" className="py-20 bg-gray-50 relative overflow-hidden">
+        {/* Blurred Image with Parallax Effect */}
+        <div 
+          className="absolute left-[-10%] top-1/2 transform -translate-y-1/2 w-[30%] max-w-[400px] min-w-[250px] h-auto pointer-events-none opacity-80 z-0"
+          style={{
+            willChange: 'transform',
+            transform: 'translateY(0)',
+          }}
+        >
+          <Image 
+            src="/images/blurred.png" 
+            alt="Decorative blur effect"
+            width={400}
+            height={600}
+            className="w-full h-auto object-contain"
+            priority
+            data-parallax="true"
+            data-parallax-speed="0.1"
+          />
+        </div>
+        
+        {/* Add parallax effect script */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            // Simple parallax effect for the blurred image
+            document.addEventListener('DOMContentLoaded', function() {
+              const parallaxElements = document.querySelectorAll('[data-parallax="true"]');
+              
+              window.addEventListener('scroll', function() {
+                parallaxElements.forEach(element => {
+                  const speed = parseFloat(element.getAttribute('data-parallax-speed') || '0.1');
+                  const offset = window.scrollY * speed;
+                  element.style.transform = 'translateY(' + offset + 'px)';
+                });
+              });
+            });
+          `
+        }} />
+
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-black text-center mb-4">How It Works</h2>
             <p className="text-xl text-black max-w-2xl mx-auto">
