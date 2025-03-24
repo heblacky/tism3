@@ -281,7 +281,7 @@ export default function IndexPage() {
       <section id="how-it-works" className="py-20 bg-gray-50 relative overflow-hidden">
         {/* Blurred Image with Parallax Effect */}
         <div 
-          className="absolute left-[-10%] top-[20%] w-[30%] max-w-[400px] min-w-[250px] h-auto pointer-events-none opacity-80 z-0"
+          className="absolute right-[-5%] top-[-20%] w-[30%] max-w-[400px] min-w-[250px] h-auto pointer-events-none opacity-80 z-0"
           style={{
             willChange: 'transform',
             transform: 'translateY(0)',
