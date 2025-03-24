@@ -698,7 +698,7 @@ export default function IndexPage() {
                       <span className="font-medium">Total Supply:</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] font-bold">1,000,000,000 $OD</span>
                     </div>
                     <div className="text-sm text-black">
-                      <span className="font-medium">Network:</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] font-bold">Solana</span>
+                      <span className="font-medium">Network:</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] font-bold">BNB</span>
                     </div>
                   </div>
                 </div>
@@ -752,7 +752,7 @@ export default function IndexPage() {
                   <h3 className="text-2xl font-bold text-black mb-4">Token Chart</h3>
                   <div className="aspect-video w-full">
                     <iframe 
-                      src="https://dexscreener.com/solana/huieumfzf1ugftudslugvhi1fcn2yjyjzvcapqckzesa" 
+                      src="https://dexscreener.com/bsc/huieumfzf1ugftudslugvhi1fcn2yjyjzvcapqckzesa" 
                       title="DexScreener Chart" 
                       className="w-full h-full border-0 rounded-lg"
                     ></iframe>
