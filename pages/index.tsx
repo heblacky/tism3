@@ -752,7 +752,7 @@ export default function IndexPage() {
                   <h3 className="text-2xl font-bold text-black mb-4">Token Chart</h3>
                   <div className="aspect-video w-full">
                     <iframe 
-                      src="https://dexscreener.com/solana" 
+                      src="https://dexscreener.com/solana/huieumfzf1ugftudslugvhi1fcn2yjyjzvcapqckzesa" 
                       title="DexScreener Chart" 
                       className="w-full h-full border-0 rounded-lg"
                     ></iframe>
