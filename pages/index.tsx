@@ -714,13 +714,16 @@ export default function IndexPage() {
                   <h3 className="text-2xl font-bold text-black mb-4">Token Chart</h3>
                   <div className="aspect-video w-full">
                     <iframe 
-                      src="https://dexscreener.com/solana" 
+                      src="https://dexscreener.com/embed/solana/84CTZ7KkC3cfRs5z5dPRKmZkMsZ3yJF11GQb7KeJWUUx?theme=dark&trades=0&info=0" 
                       title="DexScreener Chart" 
                       className="w-full h-full border-0 rounded-lg"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
                     ></iframe>
                   </div>
                   <p className="mt-4 text-sm text-gray-600 text-center">
-                    Live chart will be available when token is launched. This is a placeholder showing the Solana DEX market.
+                    Live chart showing the DOWNS token on Solana. Data powered by Dexscreener.
                   </p>
                 </div>
               </div>
