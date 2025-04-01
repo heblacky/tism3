@@ -50,8 +50,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://x.com/onlytism_",
-    tiktok: "https://www.tiktok.com/@minaisfreaky",
+    twitter: "https://x.com/onlytism",
+    tiktok: "https://www.tiktok.com/@kategrantmodel",
     telegram: "https://t.me/onlytism",
   },
 };

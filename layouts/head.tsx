@@ -16,12 +16,9 @@ export const Head = () => {
         name="viewport"
       />
       {/* Comprehensive favicon configuration to override all defaults */}
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="icon" href="/favicon.png" />
-      <link rel="icon" href="/images/logo.png" />
-      <link rel="shortcut icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" href="/favicon.png" />
-      <link rel="apple-touch-icon" href="/images/logo.png" />
+      <link rel="icon" href="/images/new-logo.png" />
+      <link rel="shortcut icon" href="/images/new-logo.png" />
+      <link rel="apple-touch-icon" href="/images/new-logo.png" />
       
       <link rel="canonical" href={siteConfig.url} />
       <meta property="og:url" content={siteConfig.url} />
@@ -29,7 +26,7 @@ export const Head = () => {
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${siteConfig.url}/images/og-image.png`} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@onlytism_" />
+      <meta name="twitter:site" content="@onlytism" />
       <meta name="twitter:domain" content={siteConfig.domain} />
     </NextHead>
   );

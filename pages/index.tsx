@@ -127,8 +127,8 @@ export default function IndexPage() {
           {/* Logo above main text */}
           <div className="mb-6 md:mb-8 flex justify-center">
             <Image 
-              src="/images/logo.png" 
-              alt="Only Downs Logo" 
+              src="/images/new-logo.png" 
+              alt="OnlyTism Logo" 
               width={140}
               height={140}
               className="rounded-full w-[140px] h-[140px] md:w-[180px] md:h-[180px]"
@@ -136,7 +136,7 @@ export default function IndexPage() {
             />
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] mb-4 md:mb-6">
-            Only Downs: Unique Face Transformation
+            OnlyTism: Unique Face Transformation
           </h1>
           <p className="text-lg md:text-xl text-black mb-6 md:mb-8 max-w-2xl mx-auto">
             The ultimate face transformer for videos. Upload your video and watch as our AI transforms faces with unique characteristics in real-time!
@@ -288,7 +288,7 @@ export default function IndexPage() {
           }}
         >
           <Image 
-            src="/images/blurred.png" 
+            src="/images/new-logo-blurred.png" 
             alt="Decorative blur effect"
             width={400}
             height={600}
