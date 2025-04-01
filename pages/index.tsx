@@ -609,9 +609,9 @@ export default function IndexPage() {
       <section id="tokenomics" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-black text-center mb-4">$OD Token</h2>
+            <h2 className="text-3xl font-bold text-black text-center mb-4">$OT Token</h2>
             <p className="text-xl text-black max-w-2xl mx-auto">
-              The $OD token powers the OnlyTism ecosystem, providing holders with exclusive benefits and platform governance rights.
+              The $OT token powers the OnlyTism ecosystem, providing holders with exclusive benefits and platform governance rights.
             </p>
           </div>
 
@@ -695,10 +695,10 @@ export default function IndexPage() {
                 <div className="px-6 py-4 border-t border-gray-100">
                   <div className="flex flex-col sm:flex-row justify-between w-full">
                     <div className="text-sm text-black mb-2 sm:mb-0">
-                      <span className="font-medium">Total Supply:</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] font-bold">1,000,000,000 $OD</span>
+                      <span className="font-medium">Total Supply:</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] font-bold">1,000,000,000 $OT</span>
                     </div>
                     <div className="text-sm text-black">
-                      <span className="font-medium">Network:</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] font-bold">BNB</span>
+                      <span className="font-medium">Network:</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff] font-bold">Solana</span>
                     </div>
                   </div>
                 </div>
@@ -783,12 +783,12 @@ export default function IndexPage() {
               <div className="p-6 md:p-8">
                 <div className="text-center mb-3 md:mb-4">
                   <h3 className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff]">Token Holder</h3>
-                  <p className="text-black mt-2">For $OD investors</p>
+                  <p className="text-black mt-2">For $OT investors</p>
                 </div>
                 <div className="flex justify-center items-end mt-4 md:mt-6 mb-4 md:mb-6">
                   <span className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff]">Free</span>
                 </div>
-                <p className="text-center text-black text-sm md:text-base mb-4 md:mb-6">For holders with at least 5 million $OD tokens</p>
+                <p className="text-center text-black text-sm md:text-base mb-4 md:mb-6">For holders with at least 5 million $OT tokens</p>
                 <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8">
                   <li className="flex items-center">
                     <svg className="w-4 h-4 md:w-5 md:h-5 text-[#004cff] mr-2 md:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
