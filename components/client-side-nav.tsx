@@ -24,10 +24,10 @@ export default function ClientSideNav() {
           <div className="flex items-center gap-3">
             <Link className="flex justify-start items-center gap-2" href="/">
               <Image
-                src="/images/new-logo.png"
+                src="/images/logo.png"
                 alt="OnlyTism Logo"
-                width={32}
-                height={32}
+                width={36}
+                height={36}
                 className="rounded-full"
               />
               <p className="font-bold text-white">Only Tism</p>

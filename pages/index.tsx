@@ -127,11 +127,11 @@ export default function IndexPage() {
           {/* Logo above main text */}
           <div className="mb-6 md:mb-8 flex justify-center">
             <Image 
-              src="/images/new-logo.png" 
+              src="/images/logo.png" 
               alt="OnlyTism Logo" 
-              width={140}
-              height={140}
-              className="rounded-full w-[140px] h-[140px] md:w-[180px] md:h-[180px]"
+              width={150}
+              height={150}
+              className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36"
               priority
             />
           </div>
@@ -288,14 +288,11 @@ export default function IndexPage() {
           }}
         >
           <Image 
-            src="/images/new-logo-blurred.png" 
+            src="/images/blurred.png" 
             alt="Decorative blur effect"
             width={400}
-            height={600}
-            className="w-full h-auto object-contain"
-            priority
-            data-parallax="true"
-            data-parallax-speed="0.1"
+            height={400}
+            className="w-full h-full object-contain"
           />
         </div>
         

@@ -33,10 +33,10 @@ const Footer = () => (
           <Link href="/" className="text-black font-bold text-xl">
             <div className="flex items-center space-x-2">
               <Image
-                src="/images/new-logo.png"
+                src="/images/logo.png"
                 alt="OnlyTism Logo"
-                width={28}
-                height={28}
+                width={36}
+                height={36}
                 className="rounded-full"
               />
               <span>OnlyTism</span>
