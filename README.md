@@ -54,9 +54,9 @@ After modifying the `.npmrc` file, you need to run `pnpm install` again to ensur
 
 Licensed under the [MIT license](https://github.com/heroui-inc/next-pages-template/blob/main/LICENSE).
 
-# OnlyDowns - AI Facial Transformation
+# OnlyTism - AI Facial Transformation
 
-OnlyDowns is an AI-powered platform that transforms faces in videos with unique characteristics. This repository contains the website code for the OnlyDowns project.
+OnlyTism is an AI-powered platform that transforms faces in videos with unique characteristics. This repository contains the website code for the OnlyTism project.
 
 ## Features
 
@@ -73,7 +73,7 @@ OnlyDowns is an AI-powered platform that transforms faces in videos with unique 
 
 ## Deployment
 
-The site is configured for deployment to onlydowns.xyz.
+The site is configured for deployment to onlytism.com.
 
 To deploy:
 1. Run `./deploy.sh` to build the static site
@@ -93,4 +93,4 @@ npm run dev
 npm run build
 ```
 
-Visit [onlydowns.xyz](https://onlydowns.xyz) to see the live site.
+Visit [onlytism.com](https://onlytism.com) to see the live site.

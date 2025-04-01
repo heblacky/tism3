@@ -1,10 +1,10 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Only Downs",
+  name: "Only Tism",
   description: "Transform your photos with our unique AI facial features",
-  domain: "onlydowns.xyz",
-  url: "https://onlydowns.xyz",
+  domain: "onlytism.com",
+  url: "https://onlytism.com",
   navItems: [
     {
       label: "Home",
@@ -50,8 +50,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://x.com/onlydownsxyz_",
+    twitter: "https://x.com/onlytism_",
     tiktok: "https://www.tiktok.com/@minaisfreaky",
-    telegram: "https://t.me/onlydownsxyz",
+    telegram: "https://t.me/onlytism",
   },
 };

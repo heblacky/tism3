@@ -71,7 +71,7 @@ export default function ServerNavbar({
           <div className="flex items-center">
             <Link href="/" className="flex items-center text-2xl font-bold text-black">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#004cff] to-[#00d5ff]">
-                OnlyDowns
+                OnlyTism
               </span>
             </Link>
           </div>

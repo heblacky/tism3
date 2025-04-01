@@ -29,7 +29,7 @@ export const Head = () => {
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${siteConfig.url}/images/og-image.png`} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@onlydownsxyz_" />
+      <meta name="twitter:site" content="@onlytism_" />
       <meta name="twitter:domain" content={siteConfig.domain} />
     </NextHead>
   );

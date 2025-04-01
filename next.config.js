@@ -10,8 +10,8 @@ const nextConfig = {
     optimizePackageImports: ['@heroui/link', '@heroui/button', 'react', 'react-dom'],
   },
   env: {
-    NEXT_PUBLIC_SITE_DOMAIN: 'onlydowns.xyz',
-    NEXT_PUBLIC_SITE_URL: 'https://onlydowns.xyz',
+    NEXT_PUBLIC_SITE_DOMAIN: 'onlytism.com',
+    NEXT_PUBLIC_SITE_URL: 'https://onlytism.com',
   },
   images: {
     dangerouslyAllowSVG: true,
@@ -23,7 +23,7 @@ const nextConfig = {
         hostname: 'source.unsplash.com',
       },
     ],
-    domains: ['onlydowns.xyz'],
+    domains: ['onlytism.com'],
     unoptimized: true, // Required for static export
   },
 }

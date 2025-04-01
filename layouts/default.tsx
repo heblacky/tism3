@@ -34,18 +34,18 @@ const Footer = () => (
             <div className="flex items-center space-x-2">
               <Image
                 src="/images/logo.png"
-                alt="OnlyDowns Logo"
+                alt="OnlyTism Logo"
                 width={28}
                 height={28}
                 className="rounded-full"
               />
-              <span>OnlyDowns</span>
+              <span>OnlyTism</span>
             </div>
           </Link>
         </div>
         <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0">
           <div className="text-gray-600 text-sm mr-6">
-            &copy; {new Date().getFullYear()} OnlyDowns. All rights reserved.
+            &copy; {new Date().getFullYear()} OnlyTism. All rights reserved.
           </div>
           <div className="flex items-center space-x-4 mt-3 md:mt-0">
             <Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-500 transition-colors">

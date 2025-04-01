@@ -161,7 +161,7 @@ export default function IndexPage() {
         <div className="relative mt-4 w-full max-w-6xl z-0">
           <Image 
             src="/images/header2.png" 
-            alt="OnlyDowns Header" 
+            alt="OnlyTism Header" 
             width={1200} 
             height={300}
             className="w-[90%] mx-auto object-contain"
@@ -352,7 +352,7 @@ export default function IndexPage() {
               <div>
                 <h3 className="text-2xl font-bold text-black mb-4">See the Magic in Action</h3>
                 <p className="text-black mb-6">
-                  OnlyDowns leverages advanced artificial intelligence to transform faces in videos with remarkable accuracy and quality. Our technology is built on a foundation of cutting-edge neural networks and machine learning algorithms that process video frames in real-time.
+                  OnlyTism leverages advanced artificial intelligence to transform faces in videos with remarkable accuracy and quality. Our technology is built on a foundation of cutting-edge neural networks and machine learning algorithms that process video frames in real-time.
                 </p>
                 <div className="space-y-4">
                   <div>
@@ -611,7 +611,7 @@ export default function IndexPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-black text-center mb-4">$OD Token</h2>
             <p className="text-xl text-black max-w-2xl mx-auto">
-              The $OD token powers the OnlyDowns ecosystem, providing holders with exclusive benefits and platform governance rights.
+              The $OD token powers the OnlyTism ecosystem, providing holders with exclusive benefits and platform governance rights.
             </p>
           </div>
 
