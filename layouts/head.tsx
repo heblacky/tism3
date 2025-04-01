@@ -16,9 +16,9 @@ export const Head = () => {
         name="viewport"
       />
       {/* Comprehensive favicon configuration to override all defaults */}
-      <link rel="icon" href="/images/logo.png" />
-      <link rel="shortcut icon" href="/images/logo.png" />
-      <link rel="apple-touch-icon" href="/images/logo.png" />
+      <link rel="icon" href="/images/lg1.png" />
+      <link rel="shortcut icon" href="/images/lg1.png" />
+      <link rel="apple-touch-icon" href="/images/lg1.png" />
       
       <link rel="canonical" href={siteConfig.url} />
       <meta property="og:url" content={siteConfig.url} />

@@ -127,7 +127,7 @@ export default function IndexPage() {
           {/* Logo above main text */}
           <div className="mb-6 md:mb-8 flex justify-center">
             <Image 
-              src="/images/logo.png" 
+              src="/images/lg1.png" 
               alt="OnlyTism Logo" 
               width={150}
               height={150}
@@ -281,18 +281,21 @@ export default function IndexPage() {
       <section id="how-it-works" className="py-20 bg-gray-50 relative overflow-hidden">
         {/* Blurred Image with Parallax Effect */}
         <div 
-          className="absolute right-[-5%] top-[-20%] w-[30%] max-w-[400px] min-w-[250px] h-auto pointer-events-none opacity-80 z-0"
+          className="absolute right-[-5%] top-[-20%] w-[30%] max-w-[400px] min-w-[250px] h-auto pointer-events-none opacity-80 z-10"
           style={{
             willChange: 'transform',
             transform: 'translateY(0)',
           }}
+          data-parallax="true"
+          data-parallax-speed="0.1"
         >
           <Image 
             src="/images/blurred.png" 
             alt="Decorative blur effect"
             width={400}
-            height={400}
-            className="w-full h-full object-contain"
+            height={600}
+            className="w-full h-auto object-contain"
+            priority
           />
         </div>
         

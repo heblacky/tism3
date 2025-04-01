@@ -24,7 +24,7 @@ export default function ClientSideNav() {
           <div className="flex items-center gap-3">
             <Link className="flex justify-start items-center gap-2" href="/">
               <Image
-                src="/images/logo.png"
+                src="/images/lg1.png"
                 alt="OnlyTism Logo"
                 width={36}
                 height={36}
